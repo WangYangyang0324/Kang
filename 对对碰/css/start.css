@@ -1,0 +1,164 @@
+@import "quanju.css";
+body {
+  width: 100%;
+  height: 100%;
+  background: url(../img/beijing.jpeg) no-repeat;
+  background-size: 100% 100%;
+}
+body #header {
+  width: 1300px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  font-family: "幼圆";
+  display: flex;
+  flex-direction: row;
+}
+body #header #center {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+body #header #left,
+body #header #right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: deepskyblue;
+  font-weight: bold;
+}
+body table {
+  width: 960px;
+  height: 480px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+body table td {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+body table td.hid{
+  visibility: hidden;
+}
+body table td img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+body table td .zz {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(../img/zhezhao.jpg) no-repeat;
+  background-size: 100% 100%;
+  transition: 0.3s;
+}
+body table td .zz.hide{
+  height: 0;
+  top: 50%;
+}
+body footer {
+  width: 1060px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 11px;
+  background: #1a1a1a;
+  opacity: 0.3;
+  /*垂直*/
+  display: flex;
+  align-items: center;
+  /*垂直居中*/
+}
+body footer .btn {
+  width: auto;
+  height: 20px;
+  display: block;
+  margin-left: 40px;
+}
+body footer span {
+  display: inline-block;
+  color: white;
+}
+body footer #begin {
+  margin-right: 20px;
+  margin-left: 50px;
+}
+body footer #stop {
+  margin-left: 20px;
+}
+body footer #progress {
+  width: 480px;
+  height: 5px;
+  background: #1a1a1a;
+  border: 1px solid #2E6DA4;
+  position: relative;
+}
+body footer #progress #progress_in {
+  width: 0px;
+  height: 5px;
+  background: pink;
+}
+body footer #progress img {
+  position: absolute;
+  left: -10px;
+  top: -7px;
+  margin-left: -10px;
+}
+body footer .voice {
+  margin-right: 20px;
+}
+body footer #voice {
+  width: 120px;
+  height: 5px;
+  position: relative;
+  border: 1px solid #2E6DA4;
+}
+body footer #voice #voice_in {
+  width: 0px;
+  height: 5px;
+  background: pink;
+}
+body footer #voice img {
+  position: absolute;
+  left: -10px;
+  top: -7px;
+}
+body #time {
+  position: fixed;
+  width: 170px;
+  height: 80px;
+  margin-right: 10px;
+  right: 0;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #time span {
+  font-size: 40px;
+  color: deepskyblue;
+}
+body #end {
+  width: 600px;
+  height: 300px;
+  border: 5px solid deepskyblue;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -150px;
+  background: url(../img/ni_shu_le.jpg) no-repeat;
+  background-size: 100% 100%;
+  visibility: hidden;
+}
